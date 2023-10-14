@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TESTE API</title>
+</head>
+<body>
+  <header class="main-title">
+    <img src="https://hbomax-images.warnermediacdn.com/2022-08/tt.png?host=wme-hbomax-drupal-prod.s3.amazonaws.com" alt="logo">
+    <h2><i>random character</i></h2>
+  </header>
+  <div class="card">
+      <img id="character-image" src="" alt="">
+    <div class="card-content">
+      <span id="character-name"> Morty Smith exemplo</span>
+      <div class="section">
+        <span id="character-status__label">Status:
+          <span id="character-status"></span>
+          <img id="status-icon" src="" alt="icon">
+        </span>
+        <span id="character-specie__label">Specie: 
+          <span id="character-specie"></span>
+        </span>
+      </div>
+
+      <div class="section">
+        <span class="content-label">Last known location:</span>
+        <span id="character-location">exemplo exemplo exemplo </span>
+      </div>
+
+      <div class="section">
+        <span class="content-label">First seen in:</span>
+        <span id="character-episode">exemplo exemplo exemplo</span>
+      </div>
+    </div>
+  </div>
+  <button id="change-character" onclick="changeChar()">change character</button>
+</body>
+<script src="/js/api.js"></script>
+<footer>
+  <div class="attributions">
+    <span>by</span>
+    <span>Gb</span>
+  </div>
+</footer>
+</html>

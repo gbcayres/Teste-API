@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://images.alphacoders.com/133/thumb-1920-1330376.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: white;
+  font-family: 'Roboto', serif;
+}
+
+h1,h2 {
+  margin: 0;
+}
+
+.main-title img {
+  width: 800px;
+}
+
+.main-title h2{
+  color:turquoise;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  font-size: 24px;
+}
+
+.card {
+  margin: 20px;
+  display: flex;
+  background-color: rgb(90, 90, 90);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+}
+
+.card-content {
+  width: 55%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+#character-image {
+  width: 45%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+#character-name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#character-status, #character-specie, #character-episode, #character-location {
+  font-size: 18px;
+  color: white;
+}
+
+.content-label, #character-status__label, #character-specie__label {
+  font-size: 16px;
+  color: rgb(181, 181, 181);
+}
+
+#status-icon {
+  width: 10px;
+  margin-bottom: 2px;
+}
+  
+button {
+  border: none;
+  padding: 10px 20px;
+  margin: 30px;
+  border-radius: 15px;
+  background-color: chartreuse;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(128, 255, 0, 0.331);
+  transition: .3s;
+}
+
+button:hover {
+  box-shadow: 0 2px 4px turquoise;
+  cursor: pointer;
+  border-radius: 5px;
+  color: rgb(130, 20, 130);
+}
+
+footer {
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+
+@media (max-width: 760px) {
+  .main-title img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-title img {
+    width: 350px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  #character-image {
+    width: 100%;
+  }
+
+  .card-content {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
